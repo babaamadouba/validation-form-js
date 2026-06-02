@@ -1,0 +1,488 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    min-height:100vh;
+
+    font-family:'Segoe UI',sans-serif;
+
+    background-image:url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4");
+
+    background-size:cover;
+    background-position:center;
+
+    position:relative;
+}
+
+/* ==========================
+   OVERLAY
+========================== */
+
+.overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    z-index:1;
+}
+
+.container{
+
+    position:relative;
+
+    z-index:2;
+}
+
+/* ==========================
+   FORMULAIRE
+========================== */
+
+.formulaire-card{
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+
+    animation:fadeIn .6s ease;
+}
+
+.logo-circle{
+
+    width:85px;
+    height:85px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#dc3545;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    color:white;
+
+    font-size:35px;
+
+    margin-bottom:15px;
+}
+
+.titre-formulaire{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#212529;
+}
+
+.sous-titre{
+
+    color:#6c757d;
+}
+
+/* ==========================
+   CHAMPS
+========================== */
+
+.form-label{
+
+    font-weight:600;
+
+    color:#343a40;
+}
+
+.form-control,
+.form-select{
+
+    border-radius:12px;
+
+    border:2px solid #dee2e6;
+
+    min-height:50px;
+
+    transition:.3s;
+}
+
+textarea.form-control{
+
+    min-height:130px;
+
+    resize:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#dc3545;
+
+    box-shadow:none;
+}
+
+/* ==========================
+   VALIDATION
+========================== */
+
+.valide{
+
+    border:2px solid #198754 !important;
+}
+
+.invalide{
+
+    border:2px solid #dc3545 !important;
+}
+
+.message-erreur{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:#dc3545;
+
+    font-size:.85rem;
+}
+
+.icone-validation{
+
+    position:absolute;
+
+    top:50%;
+
+    right:15px;
+
+    transform:translateY(-50%);
+
+    font-size:20px;
+}
+
+.succes{
+
+    color:#198754;
+}
+
+.erreur{
+
+    color:#dc3545;
+}
+
+/* ==========================
+   RADIO
+========================== */
+
+.radio-valide{
+
+    border:2px solid #198754;
+
+    background:#f3fff7;
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+.radio-invalide{
+
+    border:2px solid #dc3545;
+
+    background:#fff5f5;
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+/* ==========================
+   CHECKBOX
+========================== */
+
+.checkbox-valide{
+
+    border:2px solid #198754;
+
+    background:#f3fff7;
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+.checkbox-invalide{
+
+    border:2px solid #dc3545;
+
+    background:#fff5f5;
+
+    padding:12px;
+
+    border-radius:12px;
+}
+
+/* ==========================
+   INPUTS CHECK/RADIO
+========================== */
+
+.form-check-input:checked{
+
+    background-color:#dc3545;
+
+    border-color:#dc3545;
+}
+
+/* ==========================
+   COMPTEUR
+========================== */
+
+#compteur{
+
+    color:#6c757d;
+
+    font-size:.85rem;
+}
+
+/* ==========================
+   BOUTON
+========================== */
+
+.bouton-envoi{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.bouton-envoi:disabled{
+
+    background:#adb5bd;
+
+    color:white;
+
+    cursor:not-allowed;
+}
+
+.bouton-actif{
+
+    background:#198754 !important;
+
+    color:white;
+
+    box-shadow:
+    0 10px 20px rgba(25,135,84,.3);
+}
+
+.bouton-actif:hover{
+
+    background:#157347 !important;
+
+    transform:translateY(-2px);
+}
+
+/* ==========================
+   PROFIL PREMIUM
+========================== */
+
+.profil-premium{
+
+    margin-top:35px;
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.20);
+
+    animation:fadeIn .6s ease;
+}
+
+.bandeau-succes{
+
+    background:#198754;
+
+    color:white;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-weight:600;
+}
+
+.profil-header{
+
+    background:
+    linear-gradient(
+    135deg,
+    #dc3545,
+    #ff6b6b
+    );
+
+    padding:35px;
+
+    text-align:center;
+
+    color:white;
+}
+
+.avatar{
+
+    width:120px;
+    height:120px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#dc3545;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:60px;
+
+    margin-bottom:15px;
+}
+
+.profil-header h2{
+
+    font-size:1.8rem;
+
+    margin-bottom:10px;
+}
+
+.profil-body{
+
+    padding:25px;
+}
+
+.ligne-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:15px;
+}
+
+.ligne-info i{
+
+    color:#dc3545;
+
+    font-size:20px;
+}
+
+.presentation-box{
+
+    background:#f8f9fa;
+
+    border-left:5px solid #dc3545;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    line-height:1.6;
+}
+
+.badge-passion{
+
+    background:#dc3545;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    display:inline-block;
+
+    margin-right:5px;
+
+    margin-bottom:5px;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .formulaire-card{
+
+        padding:25px;
+    }
+
+    .titre-formulaire{
+
+        font-size:1.6rem;
+    }
+
+    .avatar{
+
+        width:90px;
+        height:90px;
+
+        font-size:45px;
+    }
+
+    .profil-header h2{
+
+        font-size:1.4rem;
+    }
+}
